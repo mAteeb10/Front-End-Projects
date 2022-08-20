@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    display: grid;
+    height: 100vh;
+    align-items: center;
+    background: hsl(217, 54%, 11%);
+}
+
+form {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 340px;
+    background: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    padding: 25px;
+    color: white;
+    font-family: 'Outfit', sans-serif;
+}
+
+.initial-image {
+    position: relative;
+    border-radius: 10%;
+    overflow: hidden;
+}
+
+.image-1 {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.image-background{
+    width: 100%;
+    height: 98%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background: hsla(179, 100%, 50%, 0.501);
+    display: flex;
+    place-items: center;
+    opacity: 0;
+    transition: 0.3s linear;
+}
+
+.image-2 {
+    position: absolute;
+}
+
+.image-background:hover {
+    opacity: 1;
+}
+
+form h3 {
+    margin: 15px 0;
+}
+
+form .about {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+} 
+
+.stats {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.stats span {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.stats span img{
+    height: 18px;
+}
+
+.stats .count p{
+    color: hsl(178, 100%, 50%);
+}
+
+.stats .time p {
+    color: hsl(215, 51%, 70%);
+}
+
+hr{
+    margin: 15px;
+    padding: 0.6px;
+    border: 0;
+    color: hsl(215, 32%, 27%);
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: hsl(215, 51%, 70%);
+}
+
+.footer img {
+    width: 35px;
+    border: 1.5px solid white;
+    transform: 0.3s linear;
+}
+
+.footer span {
+    color: white;
+    cursor: pointer;
+    transform: 0.3s linear;
+}
+
+.footer span:hover {
+    color: hsl(178, 100%, 50%);
+}
+
